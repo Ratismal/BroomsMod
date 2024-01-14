@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " W ",
+    "W W",
+    " W "
+  ],
+  "result": {
+    "item": "brooms:joiner_gold"
+  }
+}
