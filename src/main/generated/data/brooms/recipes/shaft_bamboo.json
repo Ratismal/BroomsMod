@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "pattern": [
+    "W  ",
+    " W ",
+    "  W"
+  ],
+  "result": {
+    "item": "brooms:shaft_bamboo"
+  }
+}

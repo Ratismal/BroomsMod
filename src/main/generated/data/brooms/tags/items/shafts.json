@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "brooms:shaft_acacia",
+    "brooms:shaft_bamboo",
+    "brooms:shaft_birch",
+    "brooms:shaft_cherry",
+    "brooms:shaft_crimson",
+    "brooms:shaft_dark_oak",
+    "brooms:shaft_jungle",
+    "brooms:shaft_mangrove",
+    "brooms:shaft_oak",
+    "brooms:shaft_spruce",
+    "brooms:shaft_warped"
+  ]
+}
