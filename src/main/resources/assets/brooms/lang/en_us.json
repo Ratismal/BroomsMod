@@ -2,5 +2,17 @@
   "itemGroup.brooms.brooms_items": "Brooms",
 
 
-  "item.brooms.broom": "Broom"
+  "item.brooms.broom": "Broom",
+
+  "item.brooms.shaft_oak": "Oak Shaft",
+  "item.brooms.shaft_acacia": "Acacia Shaft",
+  "item.brooms.shaft_spruce": "Spruce Shaft",
+  "item.brooms.shaft_birch": "Birch Shaft",
+  "item.brooms.shaft_jungle": "Jungle Shaft",
+  "item.brooms.shaft_dark_oak": "Dark Oak Shaft",
+  "item.brooms.shaft_mangrove": "Mangrove Shaft",
+  "item.brooms.shaft_cherry": "Cherry Shaft",
+  "item.brooms.shaft_bamboo": "Bamboo Shaft",
+  "item.brooms.shaft_crimson": "Crimson Shaft",
+  "item.brooms.shaft_warped": "Warped Shaft"
 }

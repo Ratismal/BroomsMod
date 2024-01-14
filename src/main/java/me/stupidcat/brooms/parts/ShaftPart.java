@@ -6,8 +6,13 @@ import net.minecraft.client.model.Dilation;
 import net.minecraft.client.model.ModelPartBuilder;
 import net.minecraft.client.model.ModelPartData;
 import net.minecraft.client.model.ModelTransform;
+import net.minecraft.util.Identifier;
 
-public class BroomShaftPart extends BroomPart {
+public class ShaftPart extends BroomPart {
+    public ShaftPart(Identifier sprite) {
+        super(sprite);
+    }
+
     @Override
     @Environment(EnvType.CLIENT)
     public ModelPartData createPartModel(ModelPartData root) {

@@ -2,6 +2,7 @@ package me.stupidcat.brooms;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,10 +20,13 @@ public class Brooms implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 
-		var broom = BroomsItems.BROOM;
-
 		BroomsItemGroups.register();
 		BroomsParticles.register();
 		BroomsEntities.register();
+		BroomsRecipes.register();
+	}
+
+	public static Identifier Id(String path) {
+		return new Identifier("brooms", path);
 	}
 }

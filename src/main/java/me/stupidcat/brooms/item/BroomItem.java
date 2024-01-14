@@ -5,6 +5,7 @@ import me.stupidcat.brooms.BroomsBlockTags;
 import me.stupidcat.brooms.BroomsEntities;
 import me.stupidcat.brooms.BroomsParticles;
 import me.stupidcat.brooms.entity.SparkleCloudEntity;
+import me.stupidcat.brooms.recipes.BroomRecipe;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +13,7 @@ import net.minecraft.entity.projectile.ProjectileUtil;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
@@ -41,7 +43,7 @@ public class BroomItem extends Item {
         return UseAction.BRUSH;
     }
     public int getMaxUseTime(ItemStack stack) {
-        return 200;
+        return 1200;
     }
 
     @Override
@@ -80,7 +82,7 @@ public class BroomItem extends Item {
 
     @Override
     public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
-        if (remainingUseTicks >= 0 && user instanceof PlayerEntity playerEntity) {
+        if (user instanceof PlayerEntity playerEntity) {
             HitResult hitResult = this.getHitResult(user);
             if (hitResult instanceof BlockHitResult blockHitResult) {
                 if (hitResult.getType() == HitResult.Type.BLOCK) {
@@ -188,5 +190,20 @@ public class BroomItem extends Item {
         public double zd() {
             return this.zd;
         }
+    }
+
+    public void setComponents(ItemStack stack, BroomRecipe.BroomPartCollection collection) {
+        var nbt = stack.getOrCreateNbt();
+
+        var shaftCompound = new NbtCompound();
+        collection.shaft.writeNbt(shaftCompound);
+        var joinerCompound = new NbtCompound();
+        collection.joiner.writeNbt(joinerCompound);
+        var brushCompound = new NbtCompound();
+        collection.brush.writeNbt(brushCompound);
+
+        nbt.put("shaft", shaftCompound);
+        nbt.put("joiner", joinerCompound);
+        nbt.put("brush", brushCompound);
     }
 }
