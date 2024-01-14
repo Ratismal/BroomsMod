@@ -10,6 +10,6 @@ public class BroomsRecipes {
     public static final SpecialRecipeSerializer<BroomRecipe> BROOM_SERIALIZER = new SpecialRecipeSerializer<>(BroomRecipe::new);
 
     public static void register() {
-        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier("brooms", "broom"), BROOM_SERIALIZER);
+        Registry.register(Registries.RECIPE_SERIALIZER, Brooms.Id("broom"), BROOM_SERIALIZER);
     }
 }

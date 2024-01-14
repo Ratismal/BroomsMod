@@ -7,6 +7,7 @@ import me.stupidcat.brooms.BroomsParticles;
 import me.stupidcat.brooms.entity.SparkleCloudEntity;
 import me.stupidcat.brooms.recipes.BroomRecipe;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileUtil;
@@ -20,10 +21,10 @@ import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Arm;
-import net.minecraft.util.Hand;
-import net.minecraft.util.UseAction;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
+import net.minecraft.text.TextColor;
+import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
@@ -31,6 +32,9 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class BroomItem extends Item {
     private static final double MAX_SWEEP_DISTANCE;
@@ -205,5 +209,19 @@ public class BroomItem extends Item {
         nbt.put("shaft", shaftCompound);
         nbt.put("joiner", joinerCompound);
         nbt.put("brush", brushCompound);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        var collection = new BroomRecipe.BroomPartCollection(stack);
+
+        tooltip.add(Text.translatable("item.brooms.broom.tooltip")
+                .setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(Formatting.DARK_PURPLE))));
+        tooltip.add(Text.translatable("item.brooms.broom.tooltip_component", collection.shaft.getName())
+                .setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(Formatting.DARK_PURPLE))));
+        tooltip.add(Text.translatable("item.brooms.broom.tooltip_component", collection.joiner.getName())
+                .setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(Formatting.DARK_PURPLE))));
+        tooltip.add(Text.translatable("item.brooms.broom.tooltip_component", collection.brush.getName())
+                .setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(Formatting.DARK_PURPLE))));
     }
 }

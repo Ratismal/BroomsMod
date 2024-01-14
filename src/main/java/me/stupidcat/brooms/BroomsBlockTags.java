@@ -7,6 +7,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class BroomsBlockTags {
-    public static final TagKey<Block> SWEEPABLE = TagKey.of(RegistryKeys.BLOCK, new Identifier("brooms", "sweepable"));
-    public static final TagKey<Block> SWEEPABLE_DESTROY = TagKey.of(RegistryKeys.BLOCK, new Identifier("brooms", "sweepable_destroy"));
+    public static final TagKey<Block> SWEEPABLE = TagKey.of(RegistryKeys.BLOCK, Brooms.Id("sweepable"));
+    public static final TagKey<Block> SWEEPABLE_DESTROY = TagKey.of(RegistryKeys.BLOCK, Brooms.Id("sweepable_destroy"));
 }

@@ -40,6 +40,8 @@ public class BroomsItems {
         registerShaft("warped", Items.WARPED_PLANKS, new ShaftPart(Brooms.Id("item/parts/shaft_warped")));
 
         registerJoiner("string", Items.STRING, new JoinerPart(Brooms.Id("item/parts/joiner_string")));
+        registerJoiner("iron", Items.IRON_INGOT, new JoinerPart(Brooms.Id("item/parts/joiner_iron")));
+        registerJoiner("gold", Items.GOLD_INGOT, new JoinerPart(Brooms.Id("item/parts/joiner_gold")));
 
         registerBrush("straw", Items.WHEAT, new BrushPart(Brooms.Id("item/parts/brush_straw")));
     }
@@ -55,6 +57,6 @@ public class BroomsItems {
     }
 
     public static Item register(String id, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier("brooms", id), item);
+        return Registry.register(Registries.ITEM, Brooms.Id(id), item);
     }
 }

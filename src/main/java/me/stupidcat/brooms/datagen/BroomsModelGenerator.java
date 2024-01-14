@@ -19,8 +19,16 @@ public class BroomsModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        for (var shaft : BroomsItems.SHAFTS) {
-            itemModelGenerator.register(shaft, Models.GENERATED);
+        for (var item : BroomsItems.SHAFTS) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
+
+        for (var item : BroomsItems.JOINERS) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
+
+        for (var item : BroomsItems.BRUSHES) {
+            itemModelGenerator.register(item, Models.GENERATED);
         }
     }
 }

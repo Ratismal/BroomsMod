@@ -1,12 +1,16 @@
-// 1.20.4	2024-01-13T20:03:58.931348	Brooms/Model Definitions
-4340910e64337ad93e8ce9c1373f38ae1f514a93 assets\brooms\models\item\shaft_oak.json
-67ffe28a5bdd65c96b8d2d247ba7e0ab56fcf11b assets\brooms\models\item\shaft_jungle.json
-b7686db87d16c42fa3cd806f5be95b5fbde4065b assets\brooms\models\item\shaft_acacia.json
+// 1.20.4	2024-01-14T13:56:03.824013	Brooms/Model Definitions
 ba1d831a2b842d8db41ffa5da9d74091d365492c assets\brooms\models\item\shaft_mangrove.json
-854c7da5dd92a116f059ba7cf9935724191b6a71 assets\brooms\models\item\shaft_birch.json
-81a6e8b5b1952178e4d2d13a12d03818918b92aa assets\brooms\models\item\shaft_cherry.json
 12770c1467105de3e01af17970d252a0709cdac9 assets\brooms\models\item\shaft_bamboo.json
 0ce83ed9c8691bff275c8964218322d5388df2fd assets\brooms\models\item\shaft_spruce.json
+504f97082e0af3ebf39c38a936498f867115e17d assets\brooms\models\item\joiner_string.json
+4340910e64337ad93e8ce9c1373f38ae1f514a93 assets\brooms\models\item\shaft_oak.json
+3e6b5161b259a88dd6762224ece977e9ac97cb7e assets\brooms\models\item\brush_straw.json
+67ffe28a5bdd65c96b8d2d247ba7e0ab56fcf11b assets\brooms\models\item\shaft_jungle.json
+b7686db87d16c42fa3cd806f5be95b5fbde4065b assets\brooms\models\item\shaft_acacia.json
+854c7da5dd92a116f059ba7cf9935724191b6a71 assets\brooms\models\item\shaft_birch.json
+d4ba610ae62807d61fcb5a64c0e2d7a55fa254df assets\brooms\models\item\joiner_iron.json
+81a6e8b5b1952178e4d2d13a12d03818918b92aa assets\brooms\models\item\shaft_cherry.json
 1777fd33a92ee8240c946a1430a8cf99f131a120 assets\brooms\models\item\shaft_crimson.json
-5aa3722e22ab10adfb314a57bfb201169e3b1db9 assets\brooms\models\item\shaft_warped.json
 317e1c8bf71e6b8ce3aa10f182ba01378abaf13f assets\brooms\models\item\shaft_dark_oak.json
+ad4d30170e1a4096d1f175f1a05e2cdea8cfa27e assets\brooms\models\item\joiner_gold.json
+5aa3722e22ab10adfb314a57bfb201169e3b1db9 assets\brooms\models\item\shaft_warped.json

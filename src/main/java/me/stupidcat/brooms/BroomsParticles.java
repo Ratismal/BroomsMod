@@ -12,7 +12,7 @@ public class BroomsParticles {
     public static final DefaultParticleType BROOM_SPARKLE = register("broom_sparkle", false);
 
     private static DefaultParticleType register(String name, boolean alwaysShow) {
-        return Registry.register(Registries.PARTICLE_TYPE, new Identifier("brooms", name), FabricParticleTypes.simple(alwaysShow));
+        return Registry.register(Registries.PARTICLE_TYPE, Brooms.Id(name), FabricParticleTypes.simple(alwaysShow));
     }
 
     public static void register() {

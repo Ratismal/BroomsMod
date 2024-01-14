@@ -1,4 +1,4 @@
-// 1.20.4	2024-01-13T20:03:58.9293472	Brooms/Recipes
+// 1.20.4	2024-01-14T13:56:03.8220129	Brooms/Recipes
 3b1af60d4ad9af93555f61ce1d6782fbea6fcc1e data\brooms\recipes\shaft_crimson.json
 49248ab42f240b3aa7cd3a9aee481a51e80145d6 data\brooms\recipes\shaft_jungle.json
 1d960d5f2e055685bbf89d2ae25ae3929346d9a9 data\brooms\recipes\shaft_dark_oak.json
@@ -7,6 +7,7 @@ f65d27f7b6a19317bac04a2d0be4097a65213134 data\brooms\recipes\brush_straw.json
 b0ea6b853326be4458815d76863596295f9c8726 data\brooms\advancements\recipes\misc\shaft_bamboo.json
 5fae530f4dca337b6231388540b361f463d25735 data\brooms\recipes\shaft_birch.json
 5f1eb5eeba05db5e7b1977690fc5cc7821388bae data\brooms\advancements\recipes\misc\shaft_crimson.json
+75f084a1a970a28d64dbc8c02145e2c2de52073a data\brooms\advancements\recipes\misc\joiner_gold.json
 3038820b4be5ac53d7cd6c87ed5488f6f45e6377 data\brooms\recipes\shaft_mangrove.json
 27b64fbc4e317ca560c368b05c91517fd5ebc006 data\brooms\recipes\shaft_spruce.json
 1abd73fa412a85244dec281900e1a420f0b6f54b data\brooms\advancements\recipes\misc\brush_straw.json
@@ -14,9 +15,12 @@ b0ea6b853326be4458815d76863596295f9c8726 data\brooms\advancements\recipes\misc\s
 59921a57fc07c70427f66f0f315497c52ff88ea4 data\brooms\advancements\recipes\misc\shaft_mangrove.json
 b934c81aff33549577ebd5681dd910b4bb2f545a data\brooms\recipes\shaft_acacia.json
 eb5dcd18eeb186fe6138097d2ac95a14f4808327 data\brooms\advancements\recipes\misc\shaft_birch.json
+04ad7b2ef5988d4fe53e58869b728e810a37903d data\brooms\advancements\recipes\misc\joiner_iron.json
+43bdc60e09b1b80affff052deb6ece96ae6fdbe6 data\brooms\recipes\joiner_iron.json
 9612db93ac223b4bc2a4f66a47cd6ffd92fb3d12 data\brooms\advancements\recipes\misc\shaft_oak.json
-e31c48f7bad5942af916d2fbd515392fdc5d1b65 data\brooms\recipes\shaft_bamboo.json
 98ca1454bf26844b021f7abd84440cd7041a7689 data\brooms\recipes\shaft_oak.json
+e31c48f7bad5942af916d2fbd515392fdc5d1b65 data\brooms\recipes\shaft_bamboo.json
+eb762d347f9ec5e0ac5b927e5c01aa7787d17a4c data\brooms\recipes\joiner_gold.json
 4a0bb41be00d39bd5fa8358f0c03bc903921bccd data\brooms\advancements\recipes\misc\shaft_warped.json
 8d2ba74347cb8f1c28f8e25d158f088b42aa4b4c data\brooms\recipes\joiner_string.json
 8b64efb415823fe3bb8cd7084f64d432cb595a24 data\brooms\recipes\shaft_cherry.json

@@ -1,12 +1,9 @@
 package me.stupidcat.brooms.entity;
 
-import me.stupidcat.brooms.Brooms;
 import me.stupidcat.brooms.BroomsEntities;
-import net.minecraft.client.render.entity.EntityRenderers;
 import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.particle.ParticleEffect;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 public class SparkleCloudEntity extends AreaEffectCloudEntity {
@@ -20,7 +17,7 @@ public class SparkleCloudEntity extends AreaEffectCloudEntity {
     }
 
     public SparkleCloudEntity(World world, double x, double y, double z) {
-        this((EntityType<? extends SparkleCloudEntity>) BroomsEntities.SPARKLE_CLOUD, world);
+        this(BroomsEntities.SPARKLE_CLOUD, world);
         this.setPosition(x, y, z);
     }
 

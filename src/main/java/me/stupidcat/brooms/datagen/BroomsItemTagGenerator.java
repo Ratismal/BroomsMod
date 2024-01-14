@@ -1,5 +1,6 @@
 package me.stupidcat.brooms.datagen;
 
+import me.stupidcat.brooms.Brooms;
 import me.stupidcat.brooms.BroomsItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -18,9 +19,9 @@ public class BroomsItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         super(output, registriesFuture, blockTagProvider);
     }
 
-    public static final TagKey<Item> SHAFT_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("brooms", "shafts"));
-    public static final TagKey<Item> JOINER_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("brooms", "joiners"));
-    public static final TagKey<Item> BRUSH_ITEMS = TagKey.of(RegistryKeys.ITEM, new Identifier("brooms", "brushes"));
+    public static final TagKey<Item> SHAFT_ITEMS = TagKey.of(RegistryKeys.ITEM, Brooms.Id("shafts"));
+    public static final TagKey<Item> JOINER_ITEMS = TagKey.of(RegistryKeys.ITEM, Brooms.Id("joiners"));
+    public static final TagKey<Item> BRUSH_ITEMS = TagKey.of(RegistryKeys.ITEM, Brooms.Id("brushes"));
 
     @Override
     public void configure(RegistryWrapper.WrapperLookup lookup) {

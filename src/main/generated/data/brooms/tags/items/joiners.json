@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "brooms:joiner_string"
+    "brooms:joiner_string",
+    "brooms:joiner_iron",
+    "brooms:joiner_gold"
   ]
 }

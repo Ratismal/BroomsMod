@@ -35,7 +35,7 @@ public class BroomsItemGroups {
     );
 
     public static ItemGroup register(String id, ItemGroup group) {
-        return Registry.register(Registries.ITEM_GROUP, RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier("brooms", id)), group);
+        return Registry.register(Registries.ITEM_GROUP, RegistryKey.of(RegistryKeys.ITEM_GROUP, Brooms.Id(id)), group);
     }
 
     public static void register() {
