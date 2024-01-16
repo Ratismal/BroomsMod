@@ -59,4 +59,8 @@ public class BroomsItems {
     public static Item register(String id, Item item) {
         return Registry.register(Registries.ITEM, Brooms.Id(id), item);
     }
+
+    public static void register() {
+
+    }
 }

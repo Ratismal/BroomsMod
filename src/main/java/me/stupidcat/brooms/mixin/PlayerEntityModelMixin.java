@@ -28,12 +28,6 @@ public abstract class PlayerEntityModelMixin extends BipedEntityModel<PlayerEnti
     @Final
     public ModelPart rightSleeve;
 
-    @Override
-    public void animateModel(PlayerEntity livingEntity, float f, float g, float h) {
-        // Brooms.LOGGER.info("h");
-        super.animateModel(livingEntity, f, g, h);
-    }
-
     protected void animatePlayerArms(LivingEntity entity, float animationProgress) {
         if (entity.getActiveItem().isOf(BroomsItems.BROOM)) {
             if (rightArmPose == ArmPose.BRUSH) {

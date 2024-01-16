@@ -14,6 +14,7 @@ public class Brooms implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Getting ready to sweep!");
 
+		BroomsItems.register();
 		BroomsItemGroups.register();
 		BroomsParticles.register();
 		BroomsEntities.register();
